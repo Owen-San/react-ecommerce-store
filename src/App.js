@@ -5,19 +5,21 @@ import { Footer } from "./components/Footer";
 import Highlights from "./components/Highlights";
 import Landing from "./components/Landing";
 import Nav from "./components/Nav";
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import "./index.css";
+import { Home } from "./pages/Home";
+import { Books } from "./pages/Books";
 
 function App() {
   return(
-    <div>
+    <Router>
+    <div className="App">
       <Nav />
-      <Landing />
-      <Highlights />
-      <Featured />
-      <Discounted />
-      <Explore />
+      <Route path="/" exact component={Home} />
+      <Route path="/books" component={Books} />
       <Footer />
     </div>
+    </Router>
   );
 }
 
