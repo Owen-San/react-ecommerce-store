@@ -87,7 +87,7 @@ const Cart = ({ cart, updateCart, removeItem, totals }) => {
                   <span>Total</span>
                   <span>${totals.total.toFixed(2)}</span>
                 </div>
-                <button className="btn btn__checkout no-cursor" onClick={() => alert(`Haven't got around to doing this :(`)}>
+                <button className="btn btn__checkout no-cursor" onClick={() => alert(`Will implement at a later date! :)`)}>
                   Proceed to checkout
                 </button>
               </div>
